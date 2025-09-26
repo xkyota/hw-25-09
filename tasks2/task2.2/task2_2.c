@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
     if (argc == 1)
     {
-        printf("Usage: ./program <name> <age> \n");
+        printf("Usage: ./task2_2.c <name> <age> \n");
         return 1;
     }
     else if (argc == 2)
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        printf("Usage: ./program <name> <age> \n");
+        printf("Usage: ./task2_2.c <name> <age> \n");
         return 1;
     }
 
