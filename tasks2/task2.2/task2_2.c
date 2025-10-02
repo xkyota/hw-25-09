@@ -1,13 +1,6 @@
 #include <stdio.h>
-
-int a2i(char *number);
-int len(char *text)
-{
-    int i = 0;
-    while (text[i] != 0)
-        i++;
-    return i;
-}
+#include "../../libs/a2i.h"
+#include "../../libs/len.h"
 
 int main(int argc, char *argv[])
 {
@@ -35,30 +28,4 @@ int main(int argc, char *argv[])
     }
 
     return 0;
-}
-
-int a2i(char *number)
-{
-    int result = 0;
-    int i = 0;
-    int sign = 1;
-
-    if (number[0] == '-')
-    {
-        sign = -1;
-        i++;
-    }
-
-    while (number[i] != '\0')
-    {
-        if (number[i] < '0' || number[i] > '9')
-        {
-
-            break;
-        }
-        result = result * 10 + (number[i] - '0');
-        i++;
-    }
-
-    return sign * result;
 }

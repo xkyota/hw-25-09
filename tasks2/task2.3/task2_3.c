@@ -1,15 +1,7 @@
 #include <stdio.h>
-
-int a2i(char *number);
-int myStrcmp(const char *s1, const char *s2)
-{
-    while (*s1 && (*s1 == *s2))
-    {
-        s1++;
-        s2++;
-    }
-    return (unsigned char)*s1 - (unsigned char)*s2;
-}
+#include "../../libs/a2i.h"
+#include "../../libs/len.h"
+#include "../../libs/myStrcmp.h"
 
 int main(int argc, char *argv[])
 {
@@ -64,27 +56,3 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-int a2i(char *number)
-{
-    int result = 0;
-    int i = 0;
-    int sign = 1;
-
-    if (number[0] == '-')
-    {
-        sign = -1;
-        i++;
-    }
-
-    while (number[i] != '\0')
-    {
-        if (number[i] < '0' || number[i] > '9')
-        {
-            break;
-        }
-        result = result * 10 + (number[i] - '0');
-        i++;
-    }
-
-    return sign * result;
-}

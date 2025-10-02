@@ -1,13 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "../../libs/str_eq.h"
 
-int str_eq(const char *a, const char *b) {
-    while (*a && *b) {
-        if (*a != *b) return 0;
-        a++; b++;
-    }
-    return *a == *b;
-}
 
 int main(int argc, char *argv[]) {
     int number = 0;

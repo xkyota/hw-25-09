@@ -1,13 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int str_eq(const char *a, const char *b) {
-    while (*a && *b) {
-        if (*a != *b) return 0;
-        a++; b++;
-    }
-    return *a == *b;
-}
+#include "../../libs/str_eq.h"
 
 int main(int argc, char *argv[]) {
     int port = 8080;

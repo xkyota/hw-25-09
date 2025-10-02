@@ -1,10 +1,5 @@
 #include <stdio.h>
-
-int myStrlen(char* string) {
-    int i = 0;
-    while (string[i] != 0) i++;
-    return i;
-}
+#include "../../libs/len.h"
 
 int main(int argc, char *argv[]) {
     int total_chars = 0;
@@ -15,9 +10,9 @@ int main(int argc, char *argv[]) {
     }
 
     for (int i = 1; i < argc; i++) {
-        int len = myStrlen(argv[i]);
-        printf("String: '%s', Length: %d\n", argv[i], len);
-        total_chars += len;
+        int str_len = len(argv[i]);
+        printf("String: '%s', Length: %d\n", argv[i], str_len);
+        total_chars += str_len;
     }
 
     printf("Total character count: %d\n", total_chars);

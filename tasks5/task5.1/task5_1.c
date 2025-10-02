@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "../../libs/str_eq.h"
 
 void print_help(const char *prog_name) {
     printf("Usage: %s [OPTIONS] [FILES...]\n", prog_name);
@@ -7,17 +8,6 @@ void print_help(const char *prog_name) {
     printf("  -h, --help      Show this help message\n");
 }
 
-
-// Compares two strings for equality.
-// Returns 1 if strings are equal, 0 otherwise.
-int str_eq(const char *a, const char *b) {
-    while (*a && *b) {
-        if (*a != *b) return 0;
-        a++;
-        b++;
-    }
-    return *a == *b;
-}
 
 int main(int argc, char *argv[]) {
     int verbose = 0;
