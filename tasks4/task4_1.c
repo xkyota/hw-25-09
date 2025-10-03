@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../../libs/len.h"
+#include "../libs/len.h"
 
 int main(int argc, char *argv[]) {
     int total_chars = 0;

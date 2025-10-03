@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../../libs/str_eq.h"
+#include "../libs/str_eq.h"
 
 void print_help(const char *prog_name) {
     printf("Usage: %s [OPTIONS] [FILES...]\n", prog_name);
