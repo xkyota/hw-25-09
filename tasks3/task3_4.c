@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../../libs/a2i.h"
+#include "../libs/a2i.h"
 
 
 int is_valid_base(int base)

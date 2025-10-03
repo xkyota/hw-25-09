@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../../libs/a2i.h"
+#include "../libs/a2i.h"
 
 
 int main(int argc, char *argv[])

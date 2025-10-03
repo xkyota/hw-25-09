@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "../../libs/a2i.h"
-#include "../../libs/len.h"
-#include "../../libs/myStrcmp.h"
+#include "../libs/a2i.h"
+#include "../libs/len.h"
+#include "../libs/myStrcmp.h"
 
 int main(int argc, char *argv[])
 {
