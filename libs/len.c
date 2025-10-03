@@ -1,3 +1,4 @@
+#include "len.h"
 int len(char *text)
 {
     int i = 0;

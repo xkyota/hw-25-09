@@ -1,3 +1,5 @@
+#include "a2i.h"
+
 int a2i(char* number)
 { 
     int result = 0;
